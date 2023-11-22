@@ -1,0 +1,43 @@
+@media(max-width: 768px){
+
+    .container-header h2{
+        margin: 0 auto;
+        font-size: 18px;
+    }
+
+    .img-banner{
+        display: none;
+    }
+
+    nav.menu-desktop{
+        display: none;
+    }
+
+    .sobre-wraper{
+        height: auto;
+        flex-direction: column;
+    }
+
+    .box-sobre{
+        padding: 25px;
+        width: 100%;
+    }
+
+    .box-sobre p{
+        text-align: center;
+        font-size: 11px;
+    }
+
+    .box-sobre .linha{
+        display: none;
+    }
+
+    footer h1{
+        font-size: 21px;
+        text-align: center;
+    }
+
+
+
+
+}

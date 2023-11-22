@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Montserrat:wght@500&display=swap');
+
+
+/*________________________
+
+    Configurações gerais
+_______________________*/
+*{
+    padding: 0; margin: 0; box-sizing: border-box; text-decoration: none;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    background-color: black; color: white;
+    font-family: var(--fonte-padrao);
+}
+
+:root {
+    --cor-destaque: #D31B1E; /* Definindo uma variável para a cor primária */
+    --cor-fundo: #1E1E20; /* Definindo uma variável para a cor secundária */
+    --cor-fundo2: #444242;
+    --fonte-padrao: 'Montserrat', sans-serif;; /* Definindo uma variável para a fonte principal */
+    --font-destaque: 'Lato', sans-serif;
+  }
+
+  .container{
+    margin: 0 auto;
+    width: 100%; max-width: 1200px;
+  }
+
+  /*________________________
+
+    Cabeçalho 
+_______________________*/
+
+header{
+    padding: 30px 0;
+}
+
+.container-header{
+    display: flex; align-items: center; justify-content: space-between;
+}
+
+.container-header h2{
+    margin-left: 3%;
+    padding: 7px;
+    border: 3px solid var(--cor-destaque); border-radius: 20px;
+}
+
+nav{
+    width: auto;
+    margin-right: 3%;
+    display: flex; gap: 30px;
+}
+
+nav.menu-mobile{
+    display: none;
+}
+
+nav a{
+    text-transform: uppercase;
+    font-size: 13px; font-weight: bold;
+    color: white;
+    padding: 10px 0;
+}
+
+.select{
+    border-bottom: 2px solid var(--cor-destaque);
+}
+
+/*________________________
+
+    Banner e elementos
+_______________________*/
+
+.banner{
+    width: 100%; max-width: 1500px; padding-bottom: 50px; margin: 0 auto;
+    background-image: url(../imagens/fundos/1.png); background-position: center; background-size: cover;
+}
+
+.container-banner{
+    margin: 0 auto;
+    height: auto; padding: 0 2%;
+    display: flex; align-items: center; justify-content: space-around;
+}
+
+.text-banner{
+    display: flex; flex-direction: column; gap: 23px;
+    width: 400px;
+}
+
+.text-banner h5{
+    font-size: 15px;
+    color: var(--cor-destaque);
+}
+
+.text-banner h1{
+    font-size: 62px; font-weight: bold; font-family: var(--font-destaque);
+}
+
+.text-banner a{
+    font-size: 16px;
+    padding: 15px; width: 200px;
+    border: 2px solid var(--cor-destaque);
+    text-align: center;
+    color: white;
+}
+
+.img-banner{
+    width: 500px; height: 500px;
+    background-image: url(../imagens/img-banner.png); background-size: cover;
+}
+
+/*________________________
+
+    Sessão de vantagens
+_______________________*/
+
+.vantagens{
+    display: flex; justify-content: space-around;
+    padding: 30px 0;
+}
+
+.vantagens-wraper{
+    width: 100%; max-width: 900px; margin: 0 auto; height: auto;
+    display: flex; flex-wrap: wrap; align-items: center; justify-content: space-around;
+}
+
+.vantagens-single{
+    width: 33,3%; height: 275px; padding: 25px; margin-top: 25px;
+    background-color: var(--cor-fundo);
+    display: flex; flex-direction: column; justify-content: space-around; gap: 15px;
+    transition: all 0.3s ease;
+}
+
+.vantagens-single:hover{
+    border: 5px solid var(--cor-destaque);
+    transform: translateY(0.5px); 
+}
+
+.vantagens-single h3{
+    font-size: 18px;
+}
+
+.vantagens-single img{
+    width: 50px;
+}
+
+.vantagens-single p{
+    font-size: 13px;
+    max-width: 200px;
+}
+
+.linha{
+    width: 50px; height: 2px; margin-top: -15px;
+    background-color: var(--cor-destaque);
+}
+
+/*________________________
+
+    Título das sessões
+_______________________*/
+
+.titulo{
+    margin-left: 10%;
+    display: flex; flex-direction: column; gap: 15px;
+}
+
+.titulo p{
+    font-size: 16px; font-weight: bold;
+    color: var(--cor-destaque);
+}
+
+.name-titulo{
+    display: flex; align-items: center; gap: 15px;
+}
+
+.name-titulo h1{
+    font-size: 42px; font-weight: bold; font-family: var(--font-destaque);
+}
+
+.name-titulo .linha{
+    width: 100px; height: 3px;
+}
+
+/*________________________
+
+    Sessão de serviços
+_______________________*/
+
+.servicos{
+    padding: 30px 0;
+    background-color: var(--cor-fundo);
+    display: flex; flex-direction: column; justify-content: center;
+}
+
+.container-servicos{
+    display: flex; flex-direction: column; gap: 50px;
+}
+
+.container-servicos > .linha{
+    width: 5px; height: 50px; margin: 0 auto;
+}
+
+.servicos-wraper{
+    width: 100%; max-width: 900px; margin: 0 auto;
+    display: flex; flex-wrap: wrap; align-items: center; justify-content: space-around;
+}
+
+.box-servicos{
+    width: 275px; height: 300px; padding: 25px; margin-top: 25px;
+    background-color: var(--cor-fundo2); border-bottom: 5px solid var(--cor-destaque);
+    display: flex; flex-direction: column; justify-content: flex-start; gap: 25px;
+    transition: all 0.3s ease;
+}
+
+.box-servicos:hover{
+    background-color: var(--cor-destaque); border-bottom: 5px solid white;
+    transform: translateY(0.5px); 
+}
+
+.box-servicos img{
+    width: 50px;
+}
+
+.box-servicos p{
+    font-size: 13px;
+}
+
+/*________________________
+
+    Sessão de Trabalhos
+_______________________*/
+
+.container-jobs{
+    display: flex; flex-direction: column; gap: 50px;
+}
+
+.jobs{
+    background-color: var(--cor-fundo2);
+    padding: 30px 0;
+    display: flex; flex-direction: column; justify-content: center;
+}
+
+.vitrine-jobs{
+    width: 100%; max-width: 900px; margin: 0 auto;
+    display: flex; flex-wrap: wrap; align-items: center; justify-content: space-around;
+}
+
+.box-jobs{
+    width: 250px; height: 300px; padding: 25px; margin-top: 30px;
+    background-color: var(--cor-fundo);
+    display: flex; flex-wrap: wrap; flex-direction: column; align-items: center; justify-content: space-around; gap: 25px;
+}
+
+.box-jobs p{
+    text-align: center;
+    font-size: 11px;
+}
+
+.box-jobs a{
+    font-size: 13px;
+    padding: 5px; width: 150px;
+    border: 2px solid var(--cor-destaque);
+    text-align: center;
+    color: white;
+}
+
+/*________________________
+
+    Sessão de sobre
+_______________________*/
+
+.sobre{
+    background-color: var(--cor-fundo);
+    padding: 30px 0;
+    display: flex; flex-direction: column; justify-content: center;
+}
+
+.container-sobre{
+    display: flex; flex-direction: column; gap: 50px;
+}
+
+.sobre-wraper{
+    width: 100%; max-width: 800px; margin: 0 auto; height: 400px;
+    background-color: var(--cor-fundo2);
+    display: flex; justify-content: space-between;  align-items: center;
+}
+
+.box-sobre{
+    width: 250px; height: 100%; padding: 25px;
+    display: flex; flex-direction: column; justify-content: space-around;
+}
+
+.box-sobre p{
+    font-size: 13px;
+    text-align: justify;
+}
+
+.box-sobre:nth-child(1){
+    text-align: left;
+}
+
+.box-sobre:nth-child(2){
+    text-align: right;
+}
+
+.about{
+    width: 250px; height: 100px;
+    background-color: var(--cor-fundo); border-radius: 25px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    display: flex; flex-direction: column; align-items: center; justify-content: space-around;
+}
+
+.links-about{
+    display: flex; gap: 15px;
+}
+
+.links-about a{
+
+}
+
+.links-about img{
+    width: 30px;
+    transition: all 0.3s ease;
+}
+
+.links-about img:hover{
+    width: 35px;
+    transform: translateY(0.5px); 
+}
+
+.box-sobre .linha{
+    margin: 0 auto;
+    width: 90%;
+}
+
+/*________________________
+
+    Sessão de contato
+_______________________*/
+
+.contato{
+    background-color: var(--cor-fundo);
+    padding: 30px 0;
+    display: flex; flex-direction: column; justify-content: center;
+}
+
+.container-contato{
+    display: flex; flex-direction: column; gap: 50px;
+}
+
+.contato-wraper{
+    width: 100%; max-width: 600px; margin: 0 auto; height: 400px;
+    display: flex; flex-direction: column; justify-content: space-between; align-items: center;
+}
+
+.box-contato{
+    background-color: var(--cor-fundo2);
+    width: 100%; height: 150px; padding: 10px;
+    display: flex; flex-direction: column; align-items: center; justify-content: space-around;
+}
+
+.box-contato p{
+    font-size: 11px;
+    width: 100%; max-width: 400px;
+    text-align: center;
+}
+
+.box-contato a{
+    width: 100px; height: 30px; padding: 5px;
+    background-color: var(--cor-fundo); border-radius: 25px;
+    display: flex; justify-content: center; align-items: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.box-contato:nth-child(1){
+    background-color: var(--cor-destaque);
+}
+
+.box-contato a img{
+    width: 20px; height: 20px;
+    transition: all 0.3s ease;
+}
+
+.box-contato a img:hover{
+    width: 25px; height: 25px;
+    transform: translateY(0.5px); 
+}
+
+.box-contato a p{
+    font-weight: bold;
+    color: white;
+}
+
+/*________________________
+
+    Footer
+_______________________*/
+
+footer{
+    background-image: url(../imagens/fundos/2.png); background-position: center; background-size: cover;
+    padding: 50px 0; height: 400px;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 35px;
+}
+
+footer .linha{
+    width: 5px; height: 50px;
+}
+
+footer h1{
+    font-size: 42px;
+}
+
+footer a{
+    font-size: 16px;
+    padding: 15px; width: 200px;
+    border: 2px solid var(--cor-destaque);
+    text-align: center;
+    color: white;
+}
+
+
+
+    
