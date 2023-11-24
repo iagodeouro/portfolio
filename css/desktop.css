@@ -31,13 +31,25 @@ body{
     width: 100%; max-width: 1200px;
   }
 
+  .select{
+    color: var(--cor-destaque);
+    border-bottom: 2px solid white;
+    transform: translateY(0.5px);
+}
+
   /*________________________
 
     Cabeçalho 
 _______________________*/
 
-header{
-    padding: 30px 0;
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    background-color: black; 
+    padding: 15px 0; 
 }
 
 .container-header{
@@ -65,11 +77,10 @@ nav a{
     font-size: 13px; font-weight: bold;
     color: white;
     padding: 10px 0;
+    transition: all 0.5s ease; 
 }
 
-.select{
-    border-bottom: 2px solid var(--cor-destaque);
-}
+
 
 /*________________________
 
