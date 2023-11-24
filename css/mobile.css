@@ -1,5 +1,9 @@
 @media(max-width: 768px){
 
+    header{
+        position: relative;
+    }
+
     .container-header h2{
         margin: 0 auto;
         font-size: 18px;
@@ -12,6 +16,8 @@
     nav.menu-desktop{
         display: none;
     }
+
+    
 
     .sobre-wraper{
         height: auto;
